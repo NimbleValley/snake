@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Snake</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="menu-background">
+            <h2>Customization</h2>
+            <div id="field-container">
+                <h3>Size:</h3>
+                <input id="size-input" type="number" placeholder=30>
+            </div>
+            <div id="field-container">
+                <h3>Speed:</h3>
+                <select id = "speed-select">
+                    <option value="100" selected="selected">Normal</option>
+                    <option value="200">Slow</option>
+                    <option value="75">Fast</option>
+                    <option value="50">Faster</option>
+                </select>
+            </div>
+            <h2 id="back-button" onclick="toggleMenu()"> Back </h2>
+        </div>
+    </div>
+    <div id="center-game">
+        <div id="game-overlay">
+            <h1>Snake</h1>
+            <h2 id="customize-button" onclick="toggleMenu()">Customize</h2>
+            <h2 id="play-button" onclick="startGame()">Play</h2>
+        </div>
+        <div id="game-container">
+
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+<script src="index.js"></script>
+<script src="game.js"></script>
+
+</html>
